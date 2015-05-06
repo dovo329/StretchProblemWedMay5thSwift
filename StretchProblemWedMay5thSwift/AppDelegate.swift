@@ -32,9 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             println("someInts[\(i)]==\(someInts[i])")
         }*/
         
-        var multsOf3 : Array = [Int]()
+        //var multsOf3 : Array = [Int]()
         var sum : Int = 0
-        for (var i=1; (i*3) < number; i++) {
+        /*for (var i=1; (i*3) < number; i++) {
             multsOf3.append(i*3)
             sum += multsOf3[i-1]
             println("multsOf3[\(i-1)]==\(multsOf3[i-1]); sum=\(sum)")
@@ -45,6 +45,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             multsOf5.append(i*5)
             sum += multsOf5[i-1]
             println("multsOf5[\(i-1)]==\(multsOf5[i-1]); sum=\(sum)")
+        }*/
+        
+        var thresh : Int = number
+        if (thresh > 1000) {
+            thresh = 1000
+        }
+        for (var i=0; i<thresh; i++) {
+            if ((i%3 == 0) || (i%5 == 0)) {
+                sum += i
+            }
         }
         
         return sum
@@ -55,7 +65,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //println("function(10) returns \(allNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 10))")
+        println("function(655) returns \(allNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 655))")
+        println("function(999) returns \(allNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 999))")
         println("function(1000) returns \(allNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 1000))")
+        println("function(1001) returns \(allNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 1001))")
         
         return true
     }
