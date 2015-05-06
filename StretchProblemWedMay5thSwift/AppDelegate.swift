@@ -13,6 +13,14 @@ studentCan: iterate through numbers, find multiples, and add them together
 * Create a method that will find the sum of all the multiples of 3 or 5 below an integer passed into it
 
 * Return the sum of all the multiples of 3 or 5 below 1000.
+
+check answers
+
+650: 98043
+999: 232169
+1000: 233168
+1001: 233168
+
 */
 
 import UIKit
@@ -23,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func allNumbersThatAreMultiplesOf3or5BelowThisNumber(#number: Int) -> Int {
+    func sumOfNumbersThatAreMultiplesOf3or5BelowThisNumber(#number: Int) -> Int {
         /*var someInts : Array = [Int]()
         someInts.append(3)
         someInts.append(5)
@@ -64,11 +72,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        //println("function(10) returns \(allNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 10))")
-        println("function(655) returns \(allNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 655))")
-        println("function(999) returns \(allNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 999))")
-        println("function(1000) returns \(allNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 1000))")
-        println("function(1001) returns \(allNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 1001))")
+        //println("function(10) returns \(sumOfNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 10))")
+        println("function(650) returns \(sumOfNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 650))")
+        println("function(999) returns \(sumOfNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 999))")
+        println("function(1000) returns \(sumOfNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 1000))")
+        println("function(1001) returns \(sumOfNumbersThatAreMultiplesOf3or5BelowThisNumber(number: 1001))")
         
         return true
     }
